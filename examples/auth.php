@@ -4,8 +4,9 @@ require '../SageOne.php';
 
 define('SAGE_CLIENT_ID', 'client id / api key');
 define('SAGE_CLIENT_SECRET', 'client / api secret');
-    
-$client = new SageOne(SAGE_CLIENT_ID, SAGE_CLIENT_SECRET);
+define(' SAGE_CLIENT_SIGNING_SECRET', client / Signing Secret);
+
+$client = new SageOne(SAGE_CLIENT_ID, SAGE_CLIENT_SECRET, SAGE_CLIENT_SIGNING_SECRET);
 
 $callbackURL = 'http://example.com/auth/sageone/callback';
 
